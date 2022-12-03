@@ -7,6 +7,7 @@ const HiddenAudio = () => {
   const audio = useRef(null);
   const [loop, setLoop] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  console.log(isPlaying);
 
   const handleMusicEnded = useCallback(() => {
     setLoop((prev) => (prev === 3 ? 0 : ++prev));
@@ -24,9 +25,10 @@ const HiddenAudio = () => {
     <Wrapper>
       <Audio
         ref={audio}
-        src={music[loop]}
+        src={music[1]}
         type='audio/mpeg'
         onEnded={handleMusicEnded}
+        autoPlay
       />
       <Button onClick={handleAudio} />
     </Wrapper>

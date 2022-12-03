@@ -7,7 +7,7 @@ const TreeTemplates = () => {
   return (
     <Wrapper>
       <Header>
-        <img src={back} />
+        <img src={back} alt={'hi'} />
       </Header>
       <Contents>
         <TreeTitle>title</TreeTitle>

@@ -4,7 +4,7 @@ const MyTree = () => {
   return (
     <>
       <div>
-        <img src={familly} />
+        <img src={familly} alt={'hi'} />
       </div>
     </>
   );

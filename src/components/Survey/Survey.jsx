@@ -60,7 +60,7 @@ export default function Survey() {
   return (
     <SurveyWrap>
       <Bar>
-        <Back src={back} />
+        <Back src={back} alt={'hi'} />
       </Bar>
       {content}
     </SurveyWrap>
@@ -168,11 +168,7 @@ const Bar = styled.div`
   justify-content: space-between;
   margin-top: 5px;
 `;
-const IconImg = styled.img`
-  width: 40px;
-  height: 40px;
-  margin: 4px;
-`;
+
 const CurrentCount = styled.div`
   color: black;
 `;
