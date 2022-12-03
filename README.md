@@ -1,2 +1,0 @@
-# decotree-frontend
-frontend
