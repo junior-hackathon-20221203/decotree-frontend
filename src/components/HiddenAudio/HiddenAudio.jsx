@@ -28,17 +28,14 @@ const HiddenAudio = () => {
         type='audio/mpeg'
         onEnded={handleMusicEnded}
       />
-      <Button onClick={handleAudio}>{!isPlaying ? 'Play' : 'Pause'}</Button>
+      <Button onClick={handleAudio} />
     </Wrapper>
   );
 };
 
 export default HiddenAudio;
 
-const Wrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
-`;
+const Wrapper = styled.div``;
 
 const Audio = styled.audio`
   width: 100px;
@@ -47,8 +44,8 @@ const Audio = styled.audio`
 
 const Button = styled.div`
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 44px;
+  left: 146px;
   text-align: center;
   line-height: 60px;
   width: 100px;

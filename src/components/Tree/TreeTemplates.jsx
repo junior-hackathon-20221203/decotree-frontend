@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import BackSvg from './BackSvg';
+import back from '../../assets/vector.svg';
 
 const TreeTemplates = () => {
   return (
     <Wrapper>
       <Header>
-        <BackSvg />
+        <img src={back} />
       </Header>
       <Contents>
         <TreeTitle>title</TreeTitle>

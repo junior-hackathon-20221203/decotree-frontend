@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import TreeTemplates from './components/Tree/TreeTemplates';
+import TreeTemplates from './pages/TreePage';
 import Survey from './components/Survey/Survey';
 
 const App = () => {

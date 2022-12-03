@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import back from '../../assets/vector.svg';
+
 export default function Survey() {
   const allPage = 7;
   const navigation = useNavigate();
@@ -58,8 +60,7 @@ export default function Survey() {
   return (
     <SurveyWrap>
       <Bar>
-        <IconImg src='backIcon.png' />
-        <IconImg src='xIcon.png' />
+        <Back src={back} />
       </Bar>
       {content}
     </SurveyWrap>
@@ -99,6 +100,12 @@ const SURVEY_LIST = [
     answers: ['Yesss!!!', 'Noooo...', '비 좋아하는데요?'],
   },
 ];
+
+const Back = styled.img`
+  margin-top: 10px;
+  margin-left: 10px;
+`;
+
 const SurveyWrap = styled.div`
   width: 390px;
   height: 844px;
